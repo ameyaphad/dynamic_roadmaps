@@ -1,6 +1,6 @@
 # Motion Planning in Dynamic Environments using Dynamic Roadmaps
 End-to-end implementation of the Dynamic Roadmaps (DRM) algorithm for motion planning in dynamic environments. The code utilizes the **Grapeshot API** for interaction with **PyBullet** using **OMPL**, developed by the [ELPIS Lab](https://elpislab.org/) (not publicly available). This project was completed as part of the **Motion Planning (RBE 550)** course at **Worcester Polytechnic Institute (WPI)**, taught by Professor Constantinos Chamzas.
-Details of the implementation and its related theory can be found in the report uploaded to this repository.
+The report uploaded to this repository shows details of the implementation and its related theory.
 
 ## Main Features
 - Implementation of the DRM algorithm for real-time path planning in dynamic environments using OMPL with Python.
@@ -16,7 +16,7 @@ Details of the implementation and its related theory can be found in the report 
 
 ## Results
 - The algorithm outperformed the naive approach in removing vertices and edges significantly, with DRM taking ~0.2s compared to the naive approach, which took ~5s with 5s of roadmap construction.
-- The results were obtained on the **Fetch Robot**, and the visualization for the DRM implementation can be seen below:
+- The DRM algorithm was implemented on the **Fetch Robot**, and the output of the planning can be seen in the visualization shown below:
 
 <p align='center'>
     <img src="DRM_Final_Demo_3.gif" alt="drawing" width="800"/>
