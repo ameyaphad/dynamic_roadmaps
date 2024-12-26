@@ -17,7 +17,7 @@ End-to-end implementation of the Dynamic Roadmaps (DRM) algorithm for motion pla
 
 ## Results
 <p align='center'>
-    <img src="DRM_Final_Demo.gif" alt="drawing" width="800"/>
+    <img src="DRM_Final_Demo.gif" alt="drawing" width="1000"/>
 </p>
 
 ## References
