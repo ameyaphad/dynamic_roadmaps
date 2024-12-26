@@ -1,11 +1,10 @@
 # Motion Planning in Dynamic Environments using Dynamic Roadmaps
 End-to-end implementation of the Dynamic Roadmaps (DRM) algorithm for motion planning in dynamic environments. The code utilizes the **Grapeshot API** for interaction with **PyBullet** using **OMPL**, developed by the [ELPIS Lab](https://elpislab.org/) (not publicly available). This project was completed as part of the **Motion Planning (RBE 550)** course at **Worcester Polytechnic Institute (WPI)**, taught by Professor Constantinos Chamzas.
+Details of the implementation and its related theory can be found in the report uploaded to this repository.
 
-## Features
-- Implementation of the DRM algorithm for real-time path planning in dynamic environments.
-- Uses OMPL's PRM planner as the base planner.
-- Integrates dynamic obstacle avoidance and roadmap updates.
-- Implements path repair using RRTConnect for disconnected roadmaps
+## Main Features
+- Implementation of the DRM algorithm for real-time path planning in dynamic environments using OMPL with Python.
+- Implements path repair using RRTConnect for disconnected roadmaps.
 - Utilizes PyBullet for visualization and simulation.
 
 ## Workflow of the Algorithm
@@ -16,9 +15,18 @@ End-to-end implementation of the Dynamic Roadmaps (DRM) algorithm for motion pla
 - **Visualization**: Visualizes the roadmap and path in PyBullet.
 
 ## Results
+- The algorithm outperformed the naive approach in removing vertices and edges significantly, with DRM taking ~0.2s compared to the naive approach, which took ~5s with 5s of roadmap construction.
+- The results were obtained on the **Fetch Robot**, and the visualization for the DRM implementation can be seen below:
+
 <p align='center'>
     <img src="DRM_Final_Demo_3.gif" alt="drawing" width="800"/>
 </p>
+
+
+## Future Work/ TODO
+- Add code to save the discretization performed in the environment so that it can be loaded every time an obstacle is added to/removed from the environment. Ideally, the discretization should be done offline, and the planning should be done when the obstacles are added to the environment.
+- Implement A* algorithm for graph search.
+- Add provision in code for tracking obstacle addition/removal.
 
 ## References
 This implementation is based on the following papers:
