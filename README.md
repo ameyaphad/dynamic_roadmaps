@@ -15,6 +15,11 @@ End-to-end implementation of the Dynamic Roadmaps (DRM) algorithm for motion pla
 - **Pathfinding**: Finds the shortest path from start to goal in the updated roadmap using Dijkstra's algorithm.
 - **Visualization**: Visualizes the roadmap and path in PyBullet.
 
+## Results
+<p align='center'>
+    <img src="DRM_Final_Demo.gif" alt="drawing" width="800"/>
+</p>
+
 ## References
 This implementation is based on the following papers:
 - Leven, Peter, and Seth Hutchinson. “A framework for real-time path planning in changing environments.” The International Journal of Robotics Research 21.12 (2002): 999-1030. [Link](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=5987ec6a38fc2bcb10f9137dbdcba6ec99735989)
